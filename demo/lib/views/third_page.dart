@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:demo/commons/arguements.dart';
+import 'package:demo/common/arguements.dart';
 
 class ThirdPage extends StatelessWidget {
   final ThirdPageArguments data;
