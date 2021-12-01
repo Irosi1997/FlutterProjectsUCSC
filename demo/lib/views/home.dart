@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:demo/commons/arguements.dart';
+import 'package:demo/common/arguements.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.title}) : super(key: key);
@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage> {
             Container(
               padding: EdgeInsets.only(top: 15, bottom: 50),
               child: Text(
-                'Flutter Route Generator Example',
+                'Flutter Route Generator Example & Extension of Assignment 01 - Week 02'
               ),
             ),
             FlatButton(
@@ -107,6 +107,44 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
+            FlatButton(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(18.0),
+                  side: BorderSide(color: Colors.blue)),
+              color: Colors.white,
+              textColor: Colors.blue,
+              padding: EdgeInsets.all(8.0),
+              onPressed: () {
+                Navigator.pushNamed(context, '/users');
+              },
+              child: Text(
+                "Users",
+                style: TextStyle(
+                  fontSize: 14.0,
+                ),
+              ),
+            ),
+            FlatButton(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(18.0),
+                  side: BorderSide(color: Colors.blue)),
+              color: Colors.white,
+              textColor: Colors.blue,
+              padding: EdgeInsets.all(8.0),
+              onPressed: () {
+                Navigator.of(context).pushNamed(
+                  '/profile',
+                  arguments:
+                      "Second Page", //This is really importan. Here you should pass every parameter as arguments
+                );
+              },
+              child: Text(
+                "Profile",
+                style: TextStyle(
+                  fontSize: 14.0,
+                ),
+              ),
+            ),
             Text(
               this.message,
             ),
@@ -123,4 +161,6 @@ class _HomePageState extends State<HomePage> {
       this.message = msg;
     });
   }
+
+  
 }
