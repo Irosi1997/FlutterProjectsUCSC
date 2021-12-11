@@ -11,7 +11,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  var message = "This will show you message from fourth screen.";
+  var message = "";
 
   @override
   Widget build(BuildContext context) {
@@ -28,83 +28,7 @@ class _HomePageState extends State<HomePage> {
             Container(
               padding: EdgeInsets.only(top: 15, bottom: 50),
               child: Text(
-                'Flutter Route Generator Example & Extension of Assignment 01 - Week 02'
-              ),
-            ),
-            FlatButton(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(18.0),
-                  side: BorderSide(color: Colors.blue)),
-              color: Colors.white,
-              textColor: Colors.blue,
-              padding: EdgeInsets.all(8.0),
-              onPressed: () {
-                Navigator.pushNamed(context, '/first');
-              },
-              child: Text(
-                "First Page",
-                style: TextStyle(
-                  fontSize: 14.0,
-                ),
-              ),
-            ),
-            FlatButton(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(18.0),
-                  side: BorderSide(color: Colors.blue)),
-              color: Colors.white,
-              textColor: Colors.blue,
-              padding: EdgeInsets.all(8.0),
-              onPressed: () {
-                Navigator.of(context).pushNamed(
-                  '/second',
-                  arguments:
-                      "Second Page", //This is really importan. Here you should pass every parameter as arguments
-                );
-              },
-              child: Text(
-                "Second Page",
-                style: TextStyle(
-                  fontSize: 14.0,
-                ),
-              ),
-            ),
-            FlatButton(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(18.0),
-                  side: BorderSide(color: Colors.blue)),
-              color: Colors.white,
-              textColor: Colors.blue,
-              padding: EdgeInsets.all(8.0),
-              onPressed: () {
-                Navigator.of(context).pushNamed(
-                  '/third',
-                  arguments: ThirdPageArguments(
-                      "Third Page", "This message pass through named route"),
-                );
-              },
-              child: Text(
-                "Third Page",
-                style: TextStyle(
-                  fontSize: 14.0,
-                ),
-              ),
-            ),
-            FlatButton(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(18.0),
-                  side: BorderSide(color: Colors.blue)),
-              color: Colors.white,
-              textColor: Colors.blue,
-              padding: EdgeInsets.all(8.0),
-              onPressed: () {
-                this.navigateToFourth();
-              },
-              child: Text(
-                "Fourth Page",
-                style: TextStyle(
-                  fontSize: 14.0,
-                ),
+                'Assignment 01 - Week 02'
               ),
             ),
             FlatButton(
@@ -135,7 +59,7 @@ class _HomePageState extends State<HomePage> {
                 Navigator.of(context).pushNamed(
                   '/profile',
                   arguments:
-                      "Second Page", //This is really importan. Here you should pass every parameter as arguments
+                      "Profile", //This is really importan. Here you should pass every parameter as arguments
                 );
               },
               child: Text(
@@ -154,13 +78,13 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  void navigateToFourth() async {
-    //Use the same material route way to get data back
-    var msg = await Navigator.pushNamed(context, '/fourth');
-    setState(() {
-      this.message = msg;
-    });
-  }
+  // void navigateToFourth() async {
+  //   //Use the same material route way to get data back
+  //   var msg = await Navigator.pushNamed(context, '/fourth');
+  //   setState(() {
+  //     this.message = msg;
+  //   });
+  // }
 
   
 }
