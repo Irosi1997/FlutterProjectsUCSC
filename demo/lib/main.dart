@@ -1,3 +1,4 @@
+import 'package:demo/common/themes.dart';
 import 'package:flutter/material.dart';
 import 'package:demo/views/home.dart';
 import 'package:demo/common/route_generator.dart';
@@ -11,10 +12,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
+      theme: lightTheme,
+      // ThemeData(
+      //   primarySwatch: Colors.blue,
+      //   visualDensity: VisualDensity.adaptivePlatformDensity,
+      // ),
       //Define Route Map for Named Routes
       initialRoute: '/',
       //Instead of route map we have set generate route function using onGenerateRoute
