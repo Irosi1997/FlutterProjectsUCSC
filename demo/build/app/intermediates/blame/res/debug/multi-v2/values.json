@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\UCSCFlutterGITHUBProjects\\FlutterUCSC\\demo\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "F:\\FlutterUCSCProjectswithVersionControl\\FlutterProjectsUCSC\\demo\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "F:\\UCSCFlutterGITHUBProjects\\FlutterUCSC\\demo\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "F:\\FlutterUCSCProjectswithVersionControl\\FlutterProjectsUCSC\\demo\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

@@ -1,23 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:demo/common/arguements.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
   @override
   _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
-  var message = "";
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
+        title: Text('titles.home'.tr(),
+            style: Theme.of(context).appBarTheme.textTheme.headline4),
       ),
       body: Center(
           child: Container(
@@ -28,7 +24,7 @@ class _HomePageState extends State<HomePage> {
             Container(
               padding: EdgeInsets.only(top: 15, bottom: 50),
               child: Text(
-                'Assignment 01 - Week 02'
+                'Home',
               ),
             ),
             FlatButton(
@@ -59,7 +55,7 @@ class _HomePageState extends State<HomePage> {
                 Navigator.of(context).pushNamed(
                   '/profile',
                   arguments:
-                      "Profile", //This is really importan. Here you should pass every parameter as arguments
+                      "Second Page", //This is really importan. Here you should pass every parameter as arguments
                 );
               },
               child: Text(
@@ -69,22 +65,9 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
-            Text(
-              this.message,
-            ),
           ],
         ),
       )),
     );
   }
-
-  // void navigateToFourth() async {
-  //   //Use the same material route way to get data back
-  //   var msg = await Navigator.pushNamed(context, '/fourth');
-  //   setState(() {
-  //     this.message = msg;
-  //   });
-  // }
-
-  
 }
