@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
-      initialRoute: '/',
+      initialRoute: '/home',
       onGenerateRoute: RouteGenerator.generateRoute,
       home: Utilities.isLoggedIn() ? HomePage() : LoginPage(),
     );
