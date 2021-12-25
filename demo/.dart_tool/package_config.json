@@ -255,7 +255,7 @@
     },
     {
       "name": "win32",
-      "rootUri": "file:///C:/Users/ADMIN/FlutterProject/flutter/.pub-cache/hosted/pub.dartlang.org/win32-2.3.3",
+      "rootUri": "file:///C:/Users/ADMIN/FlutterProject/flutter/.pub-cache/hosted/pub.dartlang.org/win32-2.3.1",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
@@ -272,7 +272,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-12-25T06:24:59.348816Z",
+  "generated": "2021-12-25T06:59:48.274195Z",
   "generator": "pub",
   "generatorVersion": "2.14.4"
 }
