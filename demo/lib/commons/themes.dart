@@ -26,15 +26,14 @@ ThemeData primaryTheme = ThemeData(
   primaryColor: HexColor.fromHex("#03a9f4"),
   fontFamily: 'Lato',
   appBarTheme: AppBarTheme(
-      backgroundColor: HexColor.fromHex("#03a9f4"),
       textTheme: TextTheme(
-        headline4: TextStyle(
-          fontFamily: 'Lato',
-          fontSize: 20,
-          fontWeight: FontWeight.bold,
-          color: Colors.white,
-        ),
-      )),
+    headline4: TextStyle(
+      fontFamily: 'Lato',
+      fontSize: 20,
+      fontWeight: FontWeight.bold,
+      color: Colors.white,
+    ),
+  )),
   buttonTheme: ButtonThemeData(textTheme: ButtonTextTheme.primary),
   toggleButtonsTheme: ToggleButtonsThemeData(
       //toggle button theme
@@ -65,10 +64,24 @@ ThemeData primaryTheme = ThemeData(
       fontWeight: FontWeight.bold,
       color: Colors.white,
     ),
+    subtitle1: TextStyle(
+      fontFamily: 'Lato',
+      fontSize: 18,
+      fontWeight: FontWeight.normal,
+    ),
+    bodyText1: TextStyle(
+      fontFamily: 'Lato',
+      fontSize: 18,
+      fontWeight: FontWeight.normal,
+    ),
   ),
   primaryTextTheme: TextTheme(
-      //text theme that contrast with primary color
-      ),
+    headline5: TextStyle(
+      fontFamily: 'Lato',
+      fontSize: 16,
+      fontWeight: FontWeight.normal,
+    ),
+  ),
   platform: TargetPlatform.android,
   materialTapTargetSize: MaterialTapTargetSize.padded,
   applyElevationOverlayColor: true,

@@ -9,7 +9,6 @@ Container userItem(BuildContext context, user) {
     child: Card(
       child: GestureDetector(
         onTap: () {
-          print("Cell is clicked.");
           //Navigate to user profile
         },
         child: Row(children: <Widget>[
@@ -39,7 +38,7 @@ Container userItem(BuildContext context, user) {
                 height: (height / 6 - 40) / 2,
                 width: width * 2 / 3 - 55,
                 child: Text(
-                  "No.240/A, Temple Road, Madupitiya, Panadura",
+                  "No 2, Hill St. Kandy.",
                   textAlign: TextAlign.left,
                   style: Theme.of(context).primaryTextTheme.bodyText1,
                 ),

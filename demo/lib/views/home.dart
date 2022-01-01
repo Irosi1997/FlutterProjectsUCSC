@@ -11,7 +11,6 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
         title: Text('titles.home'.tr(),
             style: Theme.of(context).appBarTheme.textTheme.headline4),
       ),
@@ -24,24 +23,7 @@ class _HomePageState extends State<HomePage> {
             Container(
               padding: EdgeInsets.only(top: 15, bottom: 50),
               child: Text(
-                'Sample Project - Week 3',
-              ),
-            ),
-            FlatButton(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(18.0),
-                  side: BorderSide(color: Colors.blue)),
-              color: Colors.white,
-              textColor: Colors.blue,
-              padding: EdgeInsets.all(8.0),
-              onPressed: () {
-                Navigator.pushNamed(context, '/login');
-              },
-              child: Text(
-                "Login",
-                style: TextStyle(
-                  fontSize: 14.0,
-                ),
+                'Home',
               ),
             ),
             FlatButton(
