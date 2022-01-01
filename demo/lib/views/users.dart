@@ -10,18 +10,18 @@ class UsersPage extends StatefulWidget {
 
 class _UsersPageState extends State<UsersPage> {
   List<String> users = [
-    "Irosi Peiris",
-    "Praveen Tharaka",
-    "Ashika Silva",
-    "Savini Gammune",
-    "Kavindu Perera",
-    "Hasan Cooray"
+    "Kamal Perera",
+    "Nimal Dissanayaka",
+    "Saman De Silva",
+    "Sunil Mendis",
+    "Shehan Gunawardana",
+    "Sudath Nishantha"
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: appBar('Users'.tr(), context),
+        appBar: appBar('titles.users'.tr(), context),
         body: ListView.separated(
             itemBuilder: (BuildContext context, index) {
               // print(stories[index]);
