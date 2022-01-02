@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
               textColor: Colors.blue,
               padding: EdgeInsets.all(8.0),
               onPressed: () {
-                Navigator.pushNamed(context, '/industries');
+                Navigator.pushNamed(context, '/users');
               },
               child: Text(
                 "Users",
