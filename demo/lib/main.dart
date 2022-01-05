@@ -34,6 +34,7 @@ class MyApp extends StatelessWidget {
       supportedLocales: context.supportedLocales,
       locale: context.locale,
       initialRoute: '/',
+      //initialRoute: '/home',
       onGenerateRoute: RouteGenerator.generateRoute,
       home: this.token != null ? HomePage() : LoginPage(),
     );
