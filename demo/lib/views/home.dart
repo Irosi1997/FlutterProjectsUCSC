@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:demo/widgets/drawer.dart';
-import 'package:demo/widgets/appbar.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -12,8 +10,10 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: appBar('titles.home'.tr(), context),
-      drawer: navDrawer(context),
+      appBar: AppBar(
+        title: Text('titles.home'.tr(),
+            style: Theme.of(context).appBarTheme.textTheme.headline4),
+      ),
       body: Center(
           child: Container(
         padding: EdgeInsets.only(top: 55),
@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
               textColor: Colors.blue,
               padding: EdgeInsets.all(8.0),
               onPressed: () {
-                Navigator.pushNamed(context, '/industries');
+                Navigator.pushNamed(context, '/users');
               },
               child: Text(
                 "Users",

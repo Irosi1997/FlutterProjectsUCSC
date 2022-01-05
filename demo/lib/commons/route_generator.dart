@@ -1,9 +1,8 @@
 import 'package:demo/views/login.dart';
-import 'package:demo/views/users.dart';
 import 'package:flutter/material.dart';
 import 'package:demo/views/home.dart';
-import 'package:demo/views/industries.dart';
-import 'package:demo/views/add_user.dart';
+import 'package:demo/views/users.dart';
+import 'package:demo/views/user_profile.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -12,16 +11,16 @@ class RouteGenerator {
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(builder: (_) => HomePage());
+      case '/login':
+        return MaterialPageRoute(builder: (_) => LoginPage());
       case '/home':
         return MaterialPageRoute(builder: (_) => HomePage());
       case '/login':
         return MaterialPageRoute(builder: (_) => LoginPage());
-      case '/industries':
-        return MaterialPageRoute(builder: (_) => IndustriesPage());
-      case '/add_user':
-        return MaterialPageRoute(builder: (_) => AddUserPage());
       case '/users':
         return MaterialPageRoute(builder: (_) => UsersPage());
+      case '/profile':
+        return MaterialPageRoute(builder: (_) => ProfilePage());
       default:
         return _errorRoute();
     }
