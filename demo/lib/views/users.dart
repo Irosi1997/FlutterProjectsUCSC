@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:demo/widgets/appbar.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:demo/views/cards/user_card.dart';
+import 'package:demo/widgets/appbar.dart';
+import 'package:demo/widgets/drawer.dart';
 
 class UsersPage extends StatefulWidget {
   @override
@@ -9,30 +9,26 @@ class UsersPage extends StatefulWidget {
 }
 
 class _UsersPageState extends State<UsersPage> {
-  List<String> users = [
-    "Irosi Peiris",
-    "Ashika Silva",
-    "Praveen Tharaka",
-    "Kasun Perera",
-    "Nanjula Perera",
-    "Sunith Silva"
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: appBar('titles.users'.tr(), context),
-        body: ListView.separated(
-            itemBuilder: (BuildContext context, index) {
-              // print(stories[index]);
-              return userItem(context, users[index]);
-            },
-            separatorBuilder: (BuildContext context, index) {
-              return Divider(
-                height: 2.0,
-                color: Colors.transparent,
-              );
-            },
-            itemCount: users.length));
+      appBar: appBar('titles.users'.tr(), context),
+      drawer: navDrawer(context),
+      body: Center(
+          child: Container(
+        padding: EdgeInsets.only(top: 55),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            Container(
+              padding: EdgeInsets.only(top: 15, bottom: 50),
+              child: Text(
+                'Profile',
+              ),
+            ),
+          ],
+        ),
+      )),
+    );
   }
 }
