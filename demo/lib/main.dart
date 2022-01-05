@@ -28,13 +28,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo App',
+      title: 'drawer.title'.tr(),
       theme: primaryTheme,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
-      initialRoute: '/',
-      //initialRoute: '/home',
+      initialRoute: '/home',
+      //initialRoute: '/',
       onGenerateRoute: RouteGenerator.generateRoute,
       home: this.token != null ? HomePage() : LoginPage(),
     );
