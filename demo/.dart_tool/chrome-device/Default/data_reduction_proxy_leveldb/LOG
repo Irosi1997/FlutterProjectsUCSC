@@ -1,5 +1,2 @@
-2022/01/05-18:32:10.125 20fc Recovering log #5
-2022/01/05-18:32:10.227 20fc Delete type=0 #3
-2022/01/05-18:32:10.227 20fc Delete type=0 #5
-2022/01/05-18:32:10.227 20fc Delete type=3 #2
-2022/01/05-18:32:10.227 20fc Delete type=3 #4
+2022/01/05-18:46:55.126 620 Creating DB C:\Users\ADMIN\AppData\Local\Temp\flutter_tools.997ac668\flutter_tools_chrome_device.6b975b3\Default\data_reduction_proxy_leveldb since it was missing.
+2022/01/05-18:46:56.229 620 Delete type=3 #1
