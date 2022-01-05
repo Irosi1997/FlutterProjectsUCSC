@@ -40,7 +40,7 @@ ThemeData primaryTheme = ThemeData(
       //toggle button theme
       ),
   buttonColor: Color(0xff936F3E),
-  secondaryHeaderColor: Colors.grey,
+  secondaryHeaderColor: Colors.grey.shade300,
   textSelectionColor: Color(0xffB5BFD3),
   cursorColor: Color(0xff936F3E),
   textSelectionHandleColor: Color(0xff936F3E),
