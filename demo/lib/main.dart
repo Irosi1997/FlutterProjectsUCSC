@@ -33,8 +33,8 @@ class MyApp extends StatelessWidget {
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
+     // initialRoute: '/',
       initialRoute: '/home',
-      //initialRoute: '/',
       onGenerateRoute: RouteGenerator.generateRoute,
       home: this.token != null ? HomePage() : LoginPage(),
     );
